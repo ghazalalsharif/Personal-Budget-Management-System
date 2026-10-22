@@ -2,6 +2,12 @@
 
 An individual **C# Windows Forms** coursework project by Ghazal Alsharif for organizing personal income, expenses and budgets through a desktop interface.
 
+## Screenshot
+
+Actual Windows application interface with sample data.
+
+![Budget management application](https://ghazalalsharif.github.io/Portfolio-Website/assets/projects/budget.jpg)
+
 ## Features
 
 - Record and review financial transactions.
