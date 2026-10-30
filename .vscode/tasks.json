@@ -1,1 +1,19 @@
-{"version":"2.0.0","tasks":[{"label":"تشغيل ظرف","type":"shell","command":"node server.mjs","isBackground":true,"problemMatcher":[]},{"label":"اختبارات الحسابات","type":"shell","command":"node --test tests/*.test.mjs","group":"test","problemMatcher":[]}]}
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Zarf",
+      "type": "shell",
+      "command": "node server.mjs",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Run budget tests",
+      "type": "shell",
+      "command": "node --test tests/*.test.mjs",
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}
