@@ -1,5 +1,7 @@
 # ظرف — ميزانيتي للجوال
 
+[افتح التطبيق من الجوال](https://ghazalalsharif.github.io/Personal-Budget-Management-System/) · [افتح الكود في VS Code للويب](https://github.dev/ghazalalsharif/Personal-Budget-Management-System)
+
 تطبيق ميزانية عربي يعمل في المتصفح وعلى الجوال، مستوحى من الأظرف والإيصالات الورقية. لا يحتاج مكتبات أو خدمة مدفوعة.
 
 ## التشغيل في Visual Studio Code
