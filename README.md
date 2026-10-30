@@ -1,48 +1,29 @@
-# Personal Budget Management System
+# ظرف — ميزانيتي للجوال
 
-An individual **C# Windows Forms** coursework project by Ghazal Alsharif for organizing personal income, expenses and budgets through a desktop interface.
+تطبيق ميزانية عربي يعمل في المتصفح وعلى الجوال، مستوحى من الأظرف والإيصالات الورقية. لا يحتاج مكتبات أو خدمة مدفوعة.
 
-## Screenshot
+## التشغيل في Visual Studio Code
 
-Actual Windows application interface with sample data.
+افتح هذا المجلد، ثم شغّل `npm start` وافتح http://127.0.0.1:4173. الاختبارات: `npm test`.
 
-![Budget management application](https://ghazalalsharif.github.io/Portfolio-Website/assets/projects/budget.jpg)
+## الخصائص
 
-## Features
+- تسجيل الراتب والمصروف، تعديل وحذف المعاملات، وبحث بالفترة والنوع والوصف.
+- تخصيص ميزانية شهرية لكل فئة وحساب المتبقي ونسبة الاستهلاك، بما فيها التجاوز.
+- حفظ محلي في المتصفح مع تصدير واسترجاع JSON واستيراد `budget.xml` من نسخة الكمبيوتر.
+- تصدير CSV، واجهة RTL متجاوبة، وإمكانية العمل دون اتصال بعد تحميل ملفات التطبيق لأول مرة.
+- المبالغ محفوظة بالهللات الصحيحة لتجنب أخطاء الكسور العشرية. العملة المعروضة ريال سعودي، ولا يوجد تحويل عملات.
 
-- Record and review financial transactions.
-- Organize income and expense information.
-- Set and monitor a budget.
-- Work with CSV-based transaction data.
+## حدود التخزين
 
-## Technology
+البيانات لا تُرفع إلى GitHub أو خادم. كل متصفح له بيانات مستقلة؛ لا توجد مزامنة أو حسابات. حذف بيانات الموقع أو التصفح الخاص قد يفقد البيانات. نزّل نسخة من «بياناتي» بانتظام، وانقلها يدويًا للجوال إذا رغبت. الموقع المنشور عام، لكن بيانات المستخدم تبقى في جهازه.
 
-C# · Windows Forms · .NET Framework 4.7.2 · CSV
+## GitHub Pages
 
-## Run locally
+ملفات النشر العامة موجودة في `docs/` فقط. في إعدادات المستودع > Pages اختر Deploy from a branch ثم main والمجلد /docs. لا تنشر ملفات Data أو budget.xml أو النسخ الاحتياطية. المستودع يحتفظ بنسخة C# الأصلية.
 
-1. Use Windows with Visual Studio and the .NET desktop development workload.
-2. Install the .NET Framework 4.7.2 targeting pack if requested.
-3. Open `WindowsFormsApp1.sln`.
-4. Build the solution and run it from Visual Studio.
-5. Use sample transactions to explore the forms.
+من الجوال افتح الرابط واختر «إضافة إلى الشاشة الرئيسية» من قائمة المتصفح. تثبيت الاختصار ودعم العمل دون اتصال يعتمدان على المتصفح. للمزامنة لاحقًا يلزم خادم وتسجيل دخول.
 
-## Structure
+## الملفات
 
-| File | Purpose |
-| --- | --- |
-| `Program.cs` | Application entry point |
-| `Form1.cs` | Main form |
-| `Budget.cs` | Budget interface |
-| `View.cs` | Transaction view |
-| `TransactionManager.cs` | Transaction handling |
-| `CsvHelper.cs` | CSV handling |
-| `*.Designer.cs`, `*.resx` | Form layouts and resources |
-
-## Project scope
-
-A desktop learning project, intended for local demonstration with sample data. It is separate from the team-based [Smart Budget Tracker console project](https://github.com/ghazalalsharif/Smart-Budget-Tracker-Console).
-
-## Author
-
-[Ghazal Alsharif](https://github.com/ghazalalsharif) · [Portfolio](https://ghazalalsharif.github.io/Portfolio-Website/)
+`docs/core.js` الحسابات والتحقق، `docs/app.js` الواجهة والتخزين، `docs/style.css` التصميم، `tests/` اختبارات الحسابات، و`server.mjs` خادم محلي للتطوير فقط.

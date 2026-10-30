@@ -1,0 +1,1 @@
+{"version":"2.0.0","tasks":[{"label":"تشغيل ظرف","type":"shell","command":"node server.mjs","isBackground":true,"problemMatcher":[]},{"label":"اختبارات الحسابات","type":"shell","command":"node --test tests/*.test.mjs","group":"test","problemMatcher":[]}]}

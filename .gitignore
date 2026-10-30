@@ -1,0 +1,12 @@
+node_modules/
+.tools/
+.vs/
+**/Data/
+**/Backups/
+**/bin/
+**/obj/
+*.xml
+*.csv
+*.bak
+*.zip
+test-results/
